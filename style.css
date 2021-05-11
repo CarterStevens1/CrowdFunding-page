@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Commissioner", sans-serif;
+  margin: 0;
+}
+
+.header {
+  width: 100%;
+}
+
+.header__img--mobile {
+  display: none;
+}
+
+.header__img--desktop {
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+}
+
+.menu {
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+@media (min-width: 750px) {
+  .menu {
+    top: 2.8em;
+    width: 77%;
+  }
+}
+
+.about,
+.discover,
+.get-started {
+  color: #fff;
+  text-decoration: none;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+  font-size: 1.1rem;
+}
+/* Container width */
+.container {
+  padding: 10% 22% 0;
+}
+/* Main box structure */
+.structure {
+  background-color: #fff;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+  border: 1px solid #e4e5f1;
+}
+
+.top-container {
+  padding: 5% 4%;
+  position: relative;
+}
+
+.master-icon {
+  position: absolute;
+  left: 49%;
+  top: -10%;
+}
+
+.title,
+.sub-title {
+  text-align: center;
+
+  margin-bottom: 0.5rem;
+}
+
+h1.title {
+  font-size: 1.5rem;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+p {
+  color: hsl(0, 0%, 48%);
+}
+/* Button Section */
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 2% 0;
+}
+
+.bookmark {
+  display: flex;
+  align-items: center;
+  background-color: #e4e5f1;
+  border-radius: 100px;
+  width: 150px;
+}
+
+.btn-all {
+  border: 0;
+  font-size: 0.9rem;
+}
+
+.bookmark-btn {
+  margin-left: -1px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  opacity: 0.65;
+  position: relative;
+  z-index: 2;
+  text-align: right;
+  background-color: transparent;
+}
+
+.bookmark-icon:hover {
+  opacity: 0.7;
+}
+
+.btn {
+  width: 220px;
+  height: 60px;
+  background-color: hsl(176, 50%, 47%);
+  border-radius: 100px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: hsl(176, 72%, 28%);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+/* End of button Section */
+
+.donation {
+  padding: 1% 8% 5%;
+  margin: 5% 0;
+}
+
+.money-section {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.stat {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.stat_hr,
+.progress-bar {
+  background-color: #e4e5f1;
+}
+
+.stat_hr {
+  height: 80px;
+  width: 2px;
+}
+
+.progress-bar {
+  height: 13px;
+  width: 100%;
+  border-radius: 100px;
+}
+
+.progress-bar_inner {
+  height: 13px;
+  background-color: #3cb4ac;
+  border-radius: 100px;
+}
+
+.aboutSec {
+  width: 85%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 2em;
+}
