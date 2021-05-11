@@ -9,6 +9,10 @@ body {
   margin: 0;
 }
 
+.main {
+  padding-bottom: 5em;
+}
+/* Header Section */
 .header {
   width: 100%;
 }
@@ -50,9 +54,13 @@ body {
   padding-left: 0.5rem;
   font-size: 1.1rem;
 }
+/* Header Section End */
+
 /* Container width */
 .container {
-  padding: 10% 22% 0;
+  width: 85%;
+  max-width: 800px;
+  margin: 0 auto;
 }
 /* Main box structure */
 .structure {
@@ -61,6 +69,7 @@ body {
   border-radius: 10px;
   box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
   border: 1px solid #e4e5f1;
+  margin: 1em 0;
 }
 
 .top-container {
@@ -120,7 +129,6 @@ p {
   border-bottom-left-radius: 0;
   opacity: 0.65;
   position: relative;
-  z-index: 2;
   text-align: right;
   background-color: transparent;
 }
@@ -144,7 +152,9 @@ p {
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 /* End of button Section */
+/* End of top Box */
 
+/* Start of donation box */
 .donation {
   padding: 1% 8% 5%;
   margin: 5% 0;
@@ -182,10 +192,112 @@ p {
   background-color: #3cb4ac;
   border-radius: 100px;
 }
+/* End of donation section */
 
+/* Start of about project section */
 .aboutSec {
   width: 85%;
   max-width: 800px;
   margin: 0 auto;
   padding-top: 2em;
 }
+
+.topLine,
+.botLine {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product {
+  padding-top: 1em;
+  box-shadow: none;
+}
+
+.pledge-title {
+  font-size: 1rem;
+}
+
+.highlightText {
+  font-size: 0.85rem;
+  font-weight: lighter;
+  color: #3cb4ac;
+}
+
+.numbers {
+  display: flex;
+  align-items: center;
+}
+
+.left {
+  margin-left: 0.2em;
+}
+
+.selectbtn {
+  border: none;
+  border-radius: 100px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-weight: 500;
+  padding: 1.25em 2.75em;
+  background-color: #3cb4ac;
+}
+
+.selectbtn:hover {
+  background-color: hsl(176, 72%, 28%);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.unavailable {
+  filter: opacity(50%);
+}
+
+.btnUnavailable {
+  background-color: #7a7a7a;
+}
+/* end of about section */
+
+/* Modal Start */
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  display: none;
+}
+
+.pledgeModal {
+  height: 80%;
+  top: 10%;
+}
+
+.modal-content {
+  background-color: #fff;
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  grid-gap: 1.5em;
+  gap: 1.5em;
+  overflow: scroll;
+  padding: 1em 0;
+}
+
+.topModalBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.closeModalIcon {
+  height: 50%;
+  cursor: pointer;
+}
+
+/* Modal end */
